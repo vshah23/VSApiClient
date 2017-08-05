@@ -1,15 +1,15 @@
 //
-//  VSAPIClientTests.swift
-//  VSAPIClientTests
+//  VSApiClientTests.swift
+//  VSApiClientTests
 //
 //  Created by Vikas Shah on 8/4/17.
 //  Copyright © 2017 Vikas Shah. All rights reserved.
 //
 
 import XCTest
-@testable import VSAPIClient
+@testable import VSApiClient
 
-class VSAPIClientTests: XCTestCase {
+class VSApiClientTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
