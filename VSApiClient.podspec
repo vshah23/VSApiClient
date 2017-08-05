@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author             = "Vikas Shah"
   s.social_media_url   = "http://twitter.com/vshah23"
   s.homepage     = "https://github.com/vshah23/VSApiClient"
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
   s.version      = "0.1.0"
 
