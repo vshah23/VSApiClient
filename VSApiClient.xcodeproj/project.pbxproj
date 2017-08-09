@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1DA95CC11F356EC400875F36 /* VSApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA95CB71F356EC400875F36 /* VSApiClient.framework */; };
 		1DA95CC61F356EC400875F36 /* VSApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA95CC51F356EC400875F36 /* VSApiClientTests.swift */; };
-		1DA95CC81F356EC400875F36 /* VSApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA95CBA1F356EC400875F36 /* VSApiClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DA95CD21F356F0800875F36 /* VSApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA95CD11F356F0800875F36 /* VSApiClient.swift */; };
 		1DA95CD61F356F4600875F36 /* VSApiClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA95CD51F356F4600875F36 /* VSApiClientProtocol.swift */; };
 /* End PBXBuildFile section */
@@ -26,7 +25,6 @@
 
 /* Begin PBXFileReference section */
 		1DA95CB71F356EC400875F36 /* VSApiClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VSApiClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DA95CBA1F356EC400875F36 /* VSApiClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSApiClient.h; sourceTree = "<group>"; };
 		1DA95CBB1F356EC400875F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DA95CC01F356EC400875F36 /* VSApiClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VSApiClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA95CC51F356EC400875F36 /* VSApiClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSApiClientTests.swift; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 			children = (
 				1DA95CD41F356F3700875F36 /* Protocols */,
 				1DA95CD31F356F0D00875F36 /* ApiClient */,
-				1DA95CBA1F356EC400875F36 /* VSApiClient.h */,
 				1DA95CBB1F356EC400875F36 /* Info.plist */,
 			);
 			path = VSApiClient;
@@ -115,7 +112,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DA95CC81F356EC400875F36 /* VSApiClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +160,7 @@
 		1DA95CAE1F356EC400875F36 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = VS;
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Vikas Shah";
@@ -261,6 +258,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -319,6 +318,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;

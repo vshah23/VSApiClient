@@ -15,7 +15,10 @@ private enum HTTPMethod: String {
     case POST
 }
 
-class VSApiClient {
+public class VSApiClient {
+    public init() {
+    }
+    
     private func performRequest(request: URLRequest, _ completion: @escaping (VSApiResponseStatus) -> Void) {
         let session = URLSession(configuration: .default)
         
@@ -32,7 +35,7 @@ class VSApiClient {
 }
 
 extension VSApiClient: VSApiClientProtocol {
-    func get(_ url: String, queryParams: [URLQueryItem]?, completion: @escaping (VSApiResponseStatus) -> Void) {
+    public func get(_ url: String, queryParams: [URLQueryItem]?, completion: @escaping (VSApiResponseStatus) -> Void) {
         guard var urlComponents = URLComponents(string: url) else {
             assertionFailure("GET: invalid url")
             completion(.Failure(nil))
@@ -54,7 +57,7 @@ extension VSApiClient: VSApiClientProtocol {
     }
     
     //TODO: make POST support a request body -- json?
-    func post(_ url: String, _ completion: @escaping (VSApiResponseStatus) -> Void) {
+    public func post(_ url: String, _ completion: @escaping (VSApiResponseStatus) -> Void) {
         guard let urlComponents = URLComponents(string: url),
             let url = urlComponents.url else {
                 assertionFailure("POST: invalid url")

@@ -8,12 +8,12 @@
 
 import Foundation
 
-enum VSApiResponseStatus {
+public enum VSApiResponseStatus {
     case Success(HTTPURLResponse)
     case Failure(Error?)
 }
 
-protocol VSApiClientProtocol {
+public protocol VSApiClientProtocol {
     func get(_ url: String, queryParams: [URLQueryItem]?, completion: @escaping (VSApiResponseStatus) -> Void)
     func post(_ url: String, _ completion: @escaping (VSApiResponseStatus) -> Void)
 }
