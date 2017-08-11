@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/vshah23/VSApiClient"
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
-  s.version      = "0.1.0"
+  s.version      = "0.2.0"
 
   s.source       = { :git => "https://github.com/vshah23/VSApiClient.git", :tag => "#{s.version}" }
 
