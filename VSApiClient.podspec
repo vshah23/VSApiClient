@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.platform     = :ios
-  s.ios.deployment_target = "11.0"
+  s.ios.deployment_target = "10.3"
   s.name         = "VSApiClient"
   s.summary      = "A simple API client for iOS."
   s.author             = "Vikas Shah"

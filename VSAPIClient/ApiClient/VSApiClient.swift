@@ -16,8 +16,7 @@ private enum HTTPMethod: String {
 }
 
 public class VSApiClient {
-    public init() {
-    }
+    public init() { }
     
     private func performRequest(request: URLRequest, _ completion: @escaping (VSApiResponseStatus) -> Void) {
         let session = URLSession(configuration: .default)
@@ -71,3 +70,4 @@ extension VSApiClient: VSApiClientProtocol {
         performRequest(request: request, completion)
     }
 }
+
