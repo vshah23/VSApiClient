@@ -18,7 +18,7 @@ private enum HTTPMethod: String {
 public class VSApiClient {
     public init() { }
     
-    private func performRequest(request: URLRequest, _ completion: @escaping (VSApiResponseStatus) -> Void) {
+    func performRequest(request: URLRequest, _ completion: @escaping (VSApiResponseStatus) -> Void) {
         let session = URLSession(configuration: .default)
         
         session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
